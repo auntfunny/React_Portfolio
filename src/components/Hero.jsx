@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -18,12 +19,13 @@ const Hero = () => {
         alt="Picture of Anthony Black"
         className="absolute bottom-0 mx-auto w-[25%] bg-radial from-acc3 via-transparent via-70% to-transparent"
       />
-      <a
-        href="./pages/my_projects.html"
-        className="absolute bottom-32 md:bottom-6 mx-auto px-4 py-2 border-2 border-acc3 shadow-xl rounded-lg bg-acc3 font-bold text-acc4 text-center text-xs md:text-base lg:text-lg hover:bg-acc4 hover:text-acc3 active:shadow-md active:shadow-acc3 active:scale-102 transition-colors duration-300 ease-in-out"
+      <Link
+        to={"/projects"}
+        onClick={() => scrollTo(0,0)}
+        className="absolute bottom-32 md:bottom-6 mx-auto px-4 py-2 border-2 border-acc3 shadow-xl rounded-lg bg-acc3 font-bold text-acc4 text-center text-xs md:text-base lg:text-lg hover:bg-acc4 hover:text-acc3 active:shadow-md active:shadow-acc3 active:scale-102 transition-colors duration-300 ease-in-out cursor-pointer"
       >
         See My Projects
-      </a>
+      </Link>
     </section>
   );
 };

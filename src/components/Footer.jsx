@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { useScroll } from "../context/ScrollContext";
 
 const Footer = () => {
+  const { sectionRefs } = useScroll();
+
   return (
     <footer className="flex flex-col gap-4 justify-center items-center min-h-200 lg:min-h-160 bg-acc1">
       <section
         id="contact"
+        ref={(el) => (sectionRefs.current[3] = el)}
         className="flex flex-col lg:flex-row justify-evenly items-center gap-8 w-3/4 h-170 lg:h-120 bg-acc4 inset-shadow-sm/80 rounded-2xl"
       >
         <div className="text-center p-3">
@@ -66,12 +70,13 @@ const Footer = () => {
           </div>
         </form>
       </section>
-      <a
-        href="#home"
-        className="w-3/4 py-3 bg-transparent border border-acc4 text-acc4 lg:border-acc2 lg:text-acc2 lg:hover:text-acc4 lg:hover:border-acc4 transition-colors duration-150 text-center rounded-xl"
+      <button
+        type="button"
+        onClick={() => scrollTo(0, 0)}
+        className="w-3/4 py-3 bg-transparent border border-acc4 text-acc4 lg:border-acc2 lg:text-acc2 lg:hover:text-acc4 lg:hover:border-acc4 transition-colors duration-150 text-center rounded-xl cursor-pointer"
       >
         Back to Top
-      </a>
+      </button>
     </footer>
   );
 };

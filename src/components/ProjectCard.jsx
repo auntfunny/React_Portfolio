@@ -1,7 +1,7 @@
 const ProjectCard = ({ project }) => {
 
   return (
-    <li className={`flex flex-col ${project.card.style === 1 ? "lg:flex-row" : "lg:flex-row-reverse"} justify-between gap-4 items-center w-3/4 p-3 md:p-6 bg-acc2 shadow-[0px_4px_12px_#335145f4] rounded-xl`}>
+    <li id={project.card.id} className={`flex flex-col ${project.card.style === 1 ? "lg:flex-row" : "lg:flex-row-reverse"} justify-between gap-4 items-center w-3/4 p-3 md:p-6 bg-acc2 shadow-[0px_4px_12px_#335145f4] rounded-xl`}>
       <a
         href={project.pageLink.href}
         target="_blank"
