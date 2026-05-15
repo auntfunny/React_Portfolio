@@ -1,0 +1,26 @@
+import { useState } from "react";
+import projects from "../data/projects.json";
+import ProjectCard from "../components/ProjectCard";
+
+const Projects = () => {
+  const [loaded, setLoaded] = useState(5);
+
+  return (
+    <main className="min-h-124 relative flex flex-col justify-center items-center gap-12 p-12 bg-acc4">
+      <ul className="relative flex flex-col justify-center items-center gap-12">
+        {projects.slice(0, loaded).map((project) => (
+          <ProjectCard key={project.card.id} project={project} />
+        ))}
+      </ul>
+      <button
+        type="button"
+        onClick={() => setLoaded(prev => prev += 5)}
+        className="self-center px-4 py-2 border-2 border-acc3 shadow-xl rounded-lg bg-acc3 font-bold text-acc4 text-center text-base lg:text-lg hover:cursor-pointer hover:bg-acc4 hover:text-acc3 active:shadow-md active:shadow-acc3 active:scale-102 transition-colors duration-300 ease-in-out"
+      >
+        Show More
+      </button>
+    </main>
+  );
+};
+
+export default Projects;
