@@ -1,0 +1,131 @@
+{
+    "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "social": "Social Links",
+        "dne": "Not Found"
+    },
+    "footer": {
+        "label": {
+            "title": "Let's Talk!",
+            "message": "Send me a message and we'll chat"
+        },
+        "form": {
+            "placeholders": {
+                "name": "Your Name",
+                "email": "Your Email",
+                "title": "Subject",
+                "message": "What's on your mind?"
+            },
+            "button": "Send Message",
+            "messages": {
+                "success": "Message Sent!",
+                "failed": "Message failed to send"
+            }
+        },
+        "top": "Back to Top"
+    },
+    "hero": {
+        "title": "Front-end Developer",
+        "button": "See My Projects",
+        "alt": "Picture of Anthony Black"
+    },
+    "about": {
+        "title": "Who Am I?",
+        "description1": "I am a progressing Web Developer specialized in front-end web development. I am an avid learner and always seek to expand my knowledge and skills.",
+        "description2": "I am a Weber State University Graduate, with an Associate's degree in general sciences. I have recently discovered a growing passion for web development and have been seeking to improve my abilities.",
+        "description3": "I also enjoy reading self improvement and science fiction books, enjoying the outdoors, and cooking, especially sweets.",
+        "alt1": "Picture of Anthony Black 2",
+        "alt2": "Picture of Anthony Black 3"
+    },
+    "skills": {
+        "title": "Skills",
+        "experience": "year of experience",
+        "download": {
+            "title": "Download my Resume",
+            "path": "/Resume.pdf",
+            "file": "AnthonyBlack_Resume.pdf"
+        }
+    },
+    "main_projects": {
+        "title": "Projects",
+        "button": "Show my Projects"
+    },
+    "side_bar": {
+        "home": "Home",
+        "about": "About Me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact Me"
+    },
+    "project_page": {
+        "button": "Show More",
+        "projects": {
+            "espacio_paihuen": {
+                "title": "Espacio Paihuen",
+                "caption": "This web page is for a cabin renting business in Chile. I created the page from scratch using React and a Supabase backend. It is in both English and Spanish using React i18n. The owner can change certain texts and add or delete photos after logging in and anyone can leave comments or make a reservation. This project taught me a lot of new skills while working with React.",
+                "button": "GitHub Repository"
+            },
+            "funval_service": {
+                "title": "Funval Service App",
+                "caption": "I was the project organizer for this web app. We were to create an application for students to log service hours with a PDF evidence, and for admins to review those hours and approve or deny the petition. I organized a group of 5 people to create the different views and functionalities, while also contributing to project first-hand.",
+                "button": "GitHub Repository"
+            },
+            "bookfinder": {
+                "title": "BookFinder App",
+                "caption": "This was a React project for one of my classes to work on using global states and consuming API's. I learned how to create custom hooks like useFetch and to create contexts to use throughout the app. I also added a login feature and connected a Supabase backend to save favorite book info for each user.",
+                "button": "GitHub Repository"
+            },
+            "weather": {
+                "title": "Weather App",
+                "caption": "This project was with React and was focused specifically in consuming API's and showing the information. I learned how to use API keys and send different endpoints to retrieve the information needed. I consumed two different API's, one for the IP information and another for the weather information.",
+                "button": "GitHub Repository"
+            },
+            "fake_store": {
+                "title": "Fake Store Catalog",
+                "caption": "This project was a personal project that I wanted to do to practice working with APIs and React and using the data to create a functioning page. I used the Fake Store API to get the data for the products and display them in a catalog format. I also added some styling and functionality to make it more user-friendly.",
+                "button": "GitHub Repository"
+            },
+            "comment": {
+                "title": "Comment Section App",
+                "caption": "This project was from a Frontend Mentor challenge. It was to create an interactive comment section that allows users to add, edit, and delete comments. I learned a lot about DOM manipulation and how to create a dynamic and interactive page using React JS.",
+                "button": "GitHub Repository"
+            },
+            "todo_list": {
+                "title": "Daily and General To-Do List",
+                "caption": "This was a personal project that I wanted to complete as a challenge for me, and as a useful app. This gave me the chance to work with Local Storage and was my first project that the changes made in the page stay after a page reload.",
+                "button": "GitHub Repository"
+            },
+            "gate": {
+                "title": "Cabin Gate Project",
+                "caption": "This was a project I did for a cabin rental project as the main entry gate. I built it by myself, designing, cutting and welding the frame, setting the rail, and adding the wood planks, creating a functioning and smooth rolling gate, with the option to add a motor to make it automated.",
+                "button": "Cabin Facebook Page"
+            },
+            "age_calculator": {
+                "title": "Age Calculator App",
+                "caption": "This was from Frontend Mentor It takes a date and uses it as the birth date to calculate the age of the person. As the user inputs the date, it verifies that the date is valid and, when the button is pressed, it validates the total date before calculating. I learned more about Javascript and how to write more logical and clean code.",
+                "button": "GitHub Repository"
+            },
+            "tip_calculator": {
+                "title": "Tip Calculator App",
+                "caption": "This project was from a Frontend Mentor challenge. It was my first JavaScript project, and I learned a lot about DOM manipulation and how to create interactive material, letting the user enter info and change the appearance of the site. It was an exciting first project that taught me a lot of new skills.",
+                "button": "GitHub Repository"
+            },
+            "social_links": {
+                "title": "Generic Social Links Profile",
+                "caption": "This project came from a challenge given on the Frontend Mentor site. It was to recreate the social links profile given to make it as similar to the original picture as possible. This included making it responsive for mobile users and including hover and focus states to increase accessibility.",
+                "button": "GitHub Repository"
+            },
+            "blog": {
+                "title": "Generic Blog Preview Card",
+                "caption": "This project came from a challenge given on the Frontend Mentor site. It was to recreate Blog Preview Card and include some interactive hover features. This was one of the very first projects I did and started practicing making projects with HTML and basic CSS features.",
+                "button": "GitHub Repository"
+            },
+            "recipe": {
+                "title": "Generic Recipe Page",
+                "caption": "This project came from a challenge given on the Frontend Mentor site. The challenge was to create a responsive recipe page based on the picture provided, including styles using span and table features. This was the first real responsive, mobile-first page that I created.",
+                "button": "GitHub Repository"
+            }
+        }
+    }
+}

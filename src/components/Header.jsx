@@ -1,17 +1,20 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
 
   const title =
     pathname === "/"
-      ? "Home"
+      ? t('nav.home')
       : pathname === "/projects"
-        ? "Projects"
+        ? t('nav.projects')
         : pathname === "/social"
-          ? "Social Links"
-          : "Not Found";
+          ? t('nav.social')
+          : t('nav.dne');
   return (
     <header
       id="home"
@@ -26,23 +29,24 @@ const Header = () => {
           />
         </Link>
 
-        <h1 className="text-xl text-acc3 md:text-4xl lg:text-6xl">{title}</h1>
+        <h1 className="hidden md:block text-xl text-acc3 md:text-4xl lg:text-6xl">{title}</h1>
 
         <div className="flex content-center items-center gap-4 md:gap-12 lg:gap-16">
           <Link
             to="/projects"
             onClick={() => scrollTo(0, 0)}
-            className="hover:text-acc3 hover:scale-150 transition-all duration-300 ease-in-out"
+            className="hover:text-acc3 md:hover:scale-150 transition-all duration-300 ease-in-out"
           >
-            Projects
+            {t('nav.projects')}
           </Link>
           <Link
             to="/social"
             onClick={() => scrollTo(0, 0)}
-            className="hover:text-acc3 hover:scale-150 transition-all duration-300 ease-in-out"
+            className="hover:text-acc3 md:hover:scale-150 transition-all duration-300 ease-in-out"
           >
-            Social Links
+            {t('nav.social')}
           </Link>
+          <LanguageSwitcher />
         </div>
       </nav>
     </header>

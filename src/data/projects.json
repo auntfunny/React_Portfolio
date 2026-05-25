@@ -10,7 +10,7 @@
     },
     "image": {
       "id": "espacioPaihuenImage",
-      "alt": "Espacio Paihuen",
+      "alt": "project_page.projects.espacio_paihuen.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103008/espacio_paihuen_k9bveh.png"
     },
     "caption": {
@@ -18,17 +18,17 @@
     },
     "articleTitle": {
       "id": "espacioPaihuenArticleTitle",
-      "text": "Espacio Paihuen",
+      "text": "project_page.projects.espacio_paihuen.title",
       "style": 2
     },
     "articlePara": {
       "id": "espacioPaihuenArticleP",
-      "text": "This web page is for a cabin renting business in Chile. I created the page from scratch using React and a Supabase backend. It is in both English and Spanish using React i18n. The owner can change certain texts and add or delete photos after logging in and anyone can leave comments or make a reservation. This project taught me a lot of new skills while working with React."
+      "text": "project_page.projects.espacio_paihuen.caption"
     },
     "sourceLink": {
       "id": "espacioPaihuenSourceLink",
       "href": "https://github.com/auntfunny/Espacio_Paihuen",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.espacio_paihuen.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778102999/espacio_paihuen_small_fyey2p.png"
   },
@@ -43,7 +43,7 @@
     },
     "image": {
       "id": "funvalServicioImage",
-      "alt": "Funval Service App",
+      "alt": "project_page.projects.funval_service.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103001/funval_servicio_tcfdui.png"
     },
     "caption": {
@@ -51,17 +51,17 @@
     },
     "articleTitle": {
       "id": "funvalServicioArticleTitle",
-      "text": "Funval Service App",
+      "text": "project_page.projects.funval_service.title",
       "style": 1
     },
     "articlePara": {
       "id": "funvalServicioArticleP",
-      "text": "I was the project organizer for this web app. We were to create an application for students to log service hours with a PDF evidence, and for admins to review those hours and approve or deny the petition. I organized a group of 5 people to create the different views and functionalities, while also contributing to project first-hand."
+      "text": "project_page.projects.funval_service.caption"
     },
     "sourceLink": {
       "id": "funvalServicioSourceLink",
       "href": "https://github.com/auntfunny/CRUD_Servicio",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.funval_service.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103001/funval_servicio_small_xmbzlo.png"
   },
@@ -76,7 +76,7 @@
     },
     "image": {
       "id": "bookFinderImage",
-      "alt": "BookFinder App",
+      "alt": "project_page.projects.bookfinder.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103000/bookFinder_gy7tul.png"
     },
     "caption": {
@@ -84,17 +84,17 @@
     },
     "articleTitle": {
       "id": "bookFinderArticleTitle",
-      "text": "BookFinder App",
+      "text": "project_page.projects.funval_service.title",
       "style": 2
     },
     "articlePara": {
       "id": "bookFinderArticleP",
-      "text": "This was a React project for one of my classes to work on using global states and consuming API's. I learned how to create custom hooks like useFetch and to create contexts to use throughout the app. I also added a login feature and connected a Supabase backend to save favorite book info for each user."
+      "text": "project_page.projects.funval_service.caption"
     },
     "sourceLink": {
       "id": "bookFinderSourceLink",
       "href": "https://github.com/auntfunny/BookFinder",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.funval_service.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778102999/bookFinder_small_ez33td.png"
   },
@@ -109,7 +109,7 @@
     },
     "image": {
       "id": "weatherImage",
-      "alt": "Weather App",
+      "alt": "project_page.projects.weather.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103003/Weather_k4gk4d.png"
     },
     "caption": {
@@ -117,17 +117,17 @@
     },
     "articleTitle": {
       "id": "weatherArticleTitle",
-      "text": "Weather App",
+      "text": "project_page.projects.weather.title",
       "style": 1
     },
     "articlePara": {
       "id": "weatherArticleP",
-      "text": "This project was with React and was focused specifically in consuming API's and showing the information. I learned how to use API keys and send different endpoints to retrieve the information needed. I consumed two different API's, one for the IP information and another for the weather information."
+      "text": "project_page.projects.weather.caption"
     },
     "sourceLink": {
       "id": "WeatherSourceLink",
       "href": "https://github.com/auntfunny/Weather_App",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.weather.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103004/Weather_small_ko2zad.png"
   },
@@ -142,7 +142,7 @@
     },
     "image": {
       "id": "fakeStoreImage",
-      "alt": "Fake Store Catalog",
+      "alt": "project_page.projects.fake_store.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103000/fakestore_oh72bv.png"
     },
     "caption": {
@@ -150,17 +150,17 @@
     },
     "articleTitle": {
       "id": "fakeStoreArticleTitle",
-      "text": "Fake Store Catalog App",
+      "text": "project_page.projects.fake_store.title",
       "style": 2
     },
     "articlePara": {
       "id": "fakeStoreArticleP",
-      "text": "This project was a personal project that I wanted to do to practice working with APIs and React and using the data to create a functioning page. I used the Fake Store API to get the data for the products and display them in a catalog format. I also added some styling and functionality to make it more user-friendly."
+      "text": "project_page.projects.fake_store.caption"
     },
     "sourceLink": {
       "id": "fakeStoreSourceLink",
       "href": "https://github.com/auntfunny/FakeStore_Catalog",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.fake_store.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103000/fakestore_small_fssqer.png"
   },
@@ -175,7 +175,7 @@
     },
     "image": {
       "id": "commentImage",
-      "alt": "Comment Section",
+      "alt": "project_page.projects.comment.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103000/comment_section_ta7scc.png"
     },
     "caption": {
@@ -183,17 +183,17 @@
     },
     "articleTitle": {
       "id": "commentArticleTitle",
-      "text": "Comment Section App",
+      "text": "project_page.projects.comment.title",
       "style": 1
     },
     "articlePara": {
       "id": "commentArticleP",
-      "text": "This project was from a Frontend Mentor challenge. It was to create an interactive comment section that allows users to add, edit, and delete comments. I learned a lot about DOM manipulation and how to create a dynamic and interactive page using React JS."
+      "text": "project_page.projects.comment.caption"
     },
     "sourceLink": {
       "id": "commentSourceLink",
       "href": "https://github.com/auntfunny/Interactive_Comments_Section",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.comment.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778102999/comment_section_small_oieuw8.png"
   },
@@ -208,7 +208,7 @@
     },
     "image": {
       "id": "toDoImage",
-      "alt": "To-Do List Image",
+      "alt": "project_page.projects.todo_list.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103003/ToDo_List_Large_bybput.png"
     },
     "caption": {
@@ -216,17 +216,17 @@
     },
     "articleTitle": {
       "id": "toDoArticleTitle",
-      "text": "Daily and General To-Do List",
+      "text": "project_page.projects.todo_list.title",
       "style": 2
     },
     "articlePara": {
       "id": "toDoArticleP",
-      "text": "This was a personal project that I wanted to complete as a challenge for me, and as a useful app. This gave me the chance to work with Local Storage and was my first project that the changes made in the page stay after a page reload."
+      "text": "project_page.projects.todo_list.caption"
     },
     "sourceLink": {
       "id": "toDoSourceLink",
       "href": "https://github.com/auntfunny/To-Do_List",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.todo_list.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103003/ToDo_List_dkeg7r.png"
   },
@@ -241,7 +241,7 @@
     },
     "image": {
       "id": "gateImage",
-      "alt": "Gate Project",
+      "alt": "project_page.projects.gate.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103002/Gate_Large_z2c1bh.jpg"
     },
     "caption": {
@@ -249,17 +249,17 @@
     },
     "articleTitle": {
       "id": "gateArticleTitle",
-      "text": "Cabin Gate Project",
+      "text": "project_page.projects.gate.title",
       "style": 1
     },
     "articlePara": {
       "id": "gateArticleP",
-      "text": "This was a project I did for a cabin rental project as the main entry gate. I built it by myself, designing, cutting and welding the frame, setting the rail, and adding the wood planks, creating a functioning and smooth rolling gate, with the option to add a motor to make it automated."
+      "text": "project_page.projects.gate.caption"
     },
     "sourceLink": {
       "id": "gateSourceLink",
       "href": "#",
-      "text": "Cabin Facebook Page"
+      "text": "project_page.projects.gate.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103001/Gate_k025x5.png"
   },
@@ -274,7 +274,7 @@
     },
     "image": {
       "id": "ageImage",
-      "alt": "Age Calculator",
+      "alt": "project_page.projects.age_calculator.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103004/Age_Calculator_Large_lrx38u.png"
     },
     "caption": {
@@ -282,17 +282,17 @@
     },
     "articleTitle": {
       "id": "ageArticleTitle",
-      "text": "Age Calculator App",
+      "text": "project_page.projects.age_calculator.title",
       "style": 2
     },
     "articlePara": {
       "id": "ageArticleP",
-      "text": "This was from Frontend Mentor It takes a date and uses it as the birth date to calculate the age of the person. As the user inputs the date, it verifies that the date is valid and, when the button is pressed, it validates the total date before calculating. I learned more about Javascript and how to write more logical and clean code."
+      "text": "project_page.projects.age_calculator.caption"
     },
     "sourceLink": {
       "id": "ageSourceLink",
       "href": "https://github.com/auntfunny/Age-Calculator-App",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.age_calculator.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103004/Age_Calculator_cp9nck.png"
   },
@@ -307,7 +307,7 @@
     },
     "image": {
       "id": "tipImage",
-      "alt": "Tip Calculator",
+      "alt": "project_page.projects.tip_calculator.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103003/Tip_Calculator_Large_rldxhv.png"
     },
     "caption": {
@@ -315,17 +315,17 @@
     },
     "articleTitle": {
       "id": "tipArticleTitle",
-      "text": "Tip Calculator App",
+      "text": "project_page.projects.tip_calculator.title",
       "style": 1
     },
     "articlePara": {
       "id": "tipArticleP",
-      "text": "This project was from a Frontend Mentor challenge. It was my first JavaScript project, and I learned a lot about DOM manipulation and how to create interactive material, letting the user enter info and change the appearance of the site. It was an exciting first project that taught me a lot of new skills."
+      "text": "project_page.projects.tip_calculator.caption"
     },
     "sourceLink": {
       "id": "tipSourceLink",
       "href": "https://github.com/auntfunny/Tip_Calculator_App",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.tip_calculator.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103003/Tip_Calculator_woeydk.png"
   },
@@ -340,7 +340,7 @@
     },
     "image": {
       "id": "socialImage",
-      "alt": "Social Links Page",
+      "alt": "project_page.projects.social_links.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103003/Social_Links_Large_cux9vh.png"
     },
     "caption": {
@@ -348,17 +348,17 @@
     },
     "articleTitle": {
       "id": "socialArticleTitle",
-      "text": "Generic Social Links Profile",
+      "text": "project_page.projects.social_links.title",
       "style": 2
     },
     "articlePara": {
       "id": "socialArticleP",
-      "text": "This project came from a challenge given on the Frontend Mentor site. It was to recreate the social links profile given to make it as similar to the original picture as possible. This included making it responsive for mobile users and including hover and focus states to increase accessibility."
+      "text": "project_page.projects.social_links.caption"
     },
     "sourceLink": {
       "id": "socialSourceLink",
       "href": "https://github.com/auntfunny/Social_Links_Profile",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.social_links.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103002/Social_Links_pqavbg.png"
   },
@@ -373,7 +373,7 @@
     },
     "image": {
       "id": "blogImage",
-      "alt": "Blog Preview Card Page",
+      "alt": "project_page.projects.blog.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103004/Blog_Preview_Large_maajgg.png"
     },
     "caption": {
@@ -381,17 +381,17 @@
     },
     "articleTitle": {
       "id": "blogArticleTitle",
-      "text": "Generic Blog Preview Card",
+      "text": "project_page.projects.blog.title",
       "style": 1
     },
     "articlePara": {
       "id": "blogArticleP",
-      "text": "This project came from a challenge given on the Frontend Mentor site. It was to recreate Blog Preview Card and include some interactive hover features. This was one of the very first projects I did and started practicing making projects with HTML and basic CSS features."
+      "text": "project_page.projects.blog.caption"
     },
     "sourceLink": {
       "id": "blogSourceLink",
       "href": "https://github.com/auntfunny/Blog_Preview_Card",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.blog.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103004/Blog_Preview_m6qyuh.png"
   },
@@ -406,7 +406,7 @@
     },
     "image": {
       "id": "recipeImage",
-      "alt": "Recipe Page",
+      "alt": "project_page.projects.recipe.title",
       "src": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103003/Recipe_Page_Large_isbcso.png"
     },
     "caption": {
@@ -414,17 +414,17 @@
     },
     "articleTitle": {
       "id": "recipeArticleTitle",
-      "text": "Generic Recipe Page",
+      "text": "project_page.projects.recipe.title",
       "style": 2
     },
     "articlePara": {
       "id": "socialArticleP",
-      "text": "This project came from a challenge given on the Frontend Mentor site. The challenge was to create a responsive recipe page based on the picture provided, including styles using span and table features. This was the first real responsive, mobile-first page that I created."
+      "text": "project_page.projects.recipe.caption"
     },
     "sourceLink": {
       "id": "recipeSourceLink",
       "href": "https://github.com/auntfunny/Recipe_Page_Main",
-      "text": "GitHub Repository"
+      "text": "project_page.projects.recipe.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103002/Recipe_Page_hvcwoq.png"
   }

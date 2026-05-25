@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import projects from "../data/projects.json";
 import { useEffect, useRef } from "react";
 import { useScroll } from "../context/ScrollContext";
+import { useTranslation } from "react-i18next";
 
 const MainProjects = () => {
   const { sectionRefs } = useScroll();
+  const { t } = useTranslation();
 
   return (
     <section
@@ -14,7 +16,7 @@ const MainProjects = () => {
     >
       <div className="flex flex-col gap-2 justify-around min-w-3/4 min-h-100 pb-8 p-4 bg-acc2 rounded-2xl shadow-lg">
         <h3 className="text-center text-acc3 text-3xl md:text-4xl lg:text-6xl font-bold">
-          Projects
+          {t('main_projects.title')}
         </h3>
         <div
           id="projectImageList"
@@ -28,7 +30,7 @@ const MainProjects = () => {
             >
               <img
                 src={project.small_image}
-                alt={project.articleTitle.text}
+                alt={t(project.articleTitle.text)}
                 className="object-cover h-60 rounded-xl"
               />
             </Link>
@@ -39,7 +41,7 @@ const MainProjects = () => {
           onClick={() => scrollTo(0, 0)}
           className="self-center px-4 py-2 border-2 border-acc3 shadow-xl rounded-lg bg-acc3 font-bold text-acc4 text-center text-base lg:text-lg hover:cursor-pointer hover:bg-acc4 hover:text-acc3 active:shadow-md active:shadow-acc3 active:scale-102 transition-colors duration-300 ease-in-out"
         >
-          Show my Projects
+          {t('main_projects.button')}
         </Link>
       </div>
     </section>

@@ -1,8 +1,10 @@
 import React from "react";
 import { useScroll } from "../context/ScrollContext";
+import { useTranslation } from "react-i18next";
 
 const SideBar = () => {
   const { sectionRefs } = useScroll();
+  const { t } = useTranslation();
 
   return (
     <aside className="hidden md:flex justify-center bg-acc1">
@@ -12,7 +14,7 @@ const SideBar = () => {
           onClick={() => scrollTo(0,0)}
           className="text-acc4 hover:text-acc3 hover:scale-150 transition-all duration-300 ease-in-out cursor-pointer"
         >
-          Home
+          {t('side_bar.home')}
         </button>
         <button
           type="button"
@@ -25,7 +27,7 @@ const SideBar = () => {
           }
           className="text-acc4 hover:text-acc3 hover:scale-150 transition-all duration-300 ease-in-out cursor-pointer"
         >
-          About Me
+          {t('side_bar.about')}
         </button>
         <button
           type="button"
@@ -38,7 +40,7 @@ const SideBar = () => {
           }
           className="text-acc4 hover:text-acc3 hover:scale-150 transition-all duration-300 ease-in-out cursor-pointer"
         >
-          Skills
+          {t('side_bar.skills')}
         </button>
         <button
           type="button"
@@ -51,7 +53,7 @@ const SideBar = () => {
           }
           className="text-acc4 hover:text-acc3 hover:scale-150 transition-all duration-300 ease-in-out cursor-pointer"
         >
-          Projects
+          {t('side_bar.projects')}
         </button>
         <button
           type="button"
@@ -64,7 +66,7 @@ const SideBar = () => {
           }
           className="text-acc4 hover:text-acc3 hover:scale-150 transition-all duration-300 ease-in-out cursor-pointer"
         >
-          Contact Me
+          {t('side_bar.contact')}
         </button>
       </nav>
     </aside>

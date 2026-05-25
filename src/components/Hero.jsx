@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="hero"
@@ -11,12 +13,12 @@ const Hero = () => {
           Anthony Black
         </h2>
         <h3 className="text-lg md:text-2xl lg:text-3xl text-acc3">
-          Front-end Developer
+          {t('hero.title')}
         </h3>
       </div>
       <img
         src="https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103000/Foto_zctgjh.png"
-        alt="Picture of Anthony Black"
+        alt={t('hero.alt')}
         className="absolute bottom-0 mx-auto w-[25%] bg-radial from-acc3 via-transparent via-70% to-transparent"
       />
       <Link
@@ -24,7 +26,7 @@ const Hero = () => {
         onClick={() => scrollTo(0,0)}
         className="absolute bottom-32 md:bottom-6 mx-auto px-4 py-2 border-2 border-acc3 shadow-xl rounded-lg bg-acc3 font-bold text-acc4 text-center text-xs md:text-base lg:text-lg hover:bg-acc4 hover:text-acc3 active:shadow-md active:shadow-acc3 active:scale-102 transition-colors duration-300 ease-in-out cursor-pointer"
       >
-        See My Projects
+        {t('hero.button')}
       </Link>
     </section>
   );

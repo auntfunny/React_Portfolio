@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useScroll } from "../context/ScrollContext";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { sectionRefs } = useScroll();
+  const { t } = useTranslation();
   const [form, setForm] = useState({
     message: "",
     title: "",
@@ -22,7 +24,7 @@ const Footer = () => {
     try {
       emailjs.send("service_my_page", "template_5q88fyt", form);
       console.log("SUCCESS!");
-      setStatus("Message Sent!");
+      setStatus(t('footer.form.messages.success'));
       setForm({
         message: "",
         title: "",
@@ -31,7 +33,7 @@ const Footer = () => {
       });
     } catch (error) {
       console.log("FAILED...", error.text);
-      setStatus("Message failed to send");
+      setStatus(t('footer.form.messages.failed'));
     } finally {
       setLoading(false);
     }
@@ -50,10 +52,10 @@ const Footer = () => {
       >
         <div className="text-center p-3">
           <h3 className="text-5xl md:text-7xl lg:text-8xl text-acc3 p-6">
-            Let's Talk!
+            {t('footer.label.title')}
           </h3>
           <p className="text-2xl md:text-3xl lg:text-4xl text-gray-400 p-6">
-            Send me a message and we'll chat
+            {t('footer.label.message')}
           </p>
         </div>
         <form
@@ -66,7 +68,7 @@ const Footer = () => {
             type="text"
             name="name"
             id="name"
-            placeholder="Your name"
+            placeholder={t('footer.form.placeholders.name')}
             onChange={inputData}
             value={form.name}
             className="bg-gray-300 p-3 w-7/8 rounded-lg border-2 border-gray-500 focus:bg-white focus:outline-none focus:border-2 focus:border-acc3 focus:shadow-md focus:shadow-acc3"
@@ -77,7 +79,7 @@ const Footer = () => {
             type="email"
             name="email"
             id="email"
-            placeholder="Your email"
+            placeholder={t('footer.form.placeholders.email')}
             onChange={inputData}
             value={form.email}
             className="bg-gray-300 p-3 w-7/8 rounded-lg border-2 border-gray-500 focus:bg-white focus:outline-none focus:border-2 focus:border-acc3 focus:shadow-md focus:shadow-acc3"
@@ -88,7 +90,7 @@ const Footer = () => {
             type="text"
             name="title"
             id="title"
-            placeholder="Subject"
+            placeholder={t('footer.form.placeholders.title')}
             onChange={inputData}
             value={form.title}
             className="bg-gray-300 p-3 w-7/8 rounded-lg border-2 border-gray-500 focus:bg-white focus:outline-none focus:border-2 focus:border-acc3 focus:shadow-md focus:shadow-acc3"
@@ -98,7 +100,7 @@ const Footer = () => {
             required
             name="message"
             id="message"
-            placeholder="What's on your mind?"
+            placeholder={t('footer.form.placeholders.message')}
             onChange={inputData}
             value={form.message}
             className="bg-gray-300 p-3 w-7/8 h-3/5 rounded-lg border-2 border-gray-500 focus:bg-white focus:outline-none focus:border-2 focus:border-acc3 focus:shadow-md focus:shadow-acc3"
@@ -108,9 +110,13 @@ const Footer = () => {
             <button
               type="submit"
               id="formButton"
-              className="flex justify-center items-center w-7/8 px-4 py-2 border-2 border-acc3 shadow-xl rounded-lg bg-acc3 font-bold text-acc4 text-center text-lg hover:cursor-pointer hover:bg-acc4 hover:text-acc3 active:shadow-md active:shadow-acc3 active:scale-102 transition-colors duration-300 ease-in-out"
+              className={`flex justify-center items-center w-7/8 px-4 py-2 border-2 border-acc3 shadow-xl rounded-lg bg-acc3 font-bold text-acc4 text-center text-lg ${loading ? "cursor-wait" : "hover:cursor-pointer hover:bg-acc4 hover:text-acc3"} active:shadow-md active:shadow-acc3 active:scale-102 transition-colors duration-300 ease-in-out`}
             >
-              Send message
+              {loading ? (
+          <div class="w-6 h-6 rounded-full border-3 border-acc4 border-t-acc1 animate-spin"></div>
+        ) : (
+          t('footer.form.button')
+        )}
             </button>
             <p className="text-acc3">{status}</p>
           </div>
@@ -119,13 +125,9 @@ const Footer = () => {
       <button
         type="button"
         onClick={() => scrollTo(0, 0)}
-        className={`w-3/4 py-3 bg-transparent border border-acc4 text-acc4 lg:border-acc2 lg:text-acc2 transition-colors duration-150 text-center rounded-xl ${loading ? "cursor-wait" : "lg:hover:text-acc4 lg:hover:border-acc4 cursor-pointer"}`}
+        className={`w-3/4 py-3 bg-transparent border border-acc4/80 text-acc4/80 lg:border-acc3/60 lg:text-acc3/60 transition-colors duration-150 text-center rounded-xl lg:hover:text-acc4/80 lg:hover:border-acc4/80 cursor-pointer`}
       >
-        {loading ? (
-          <div class="w-6 h-6 rounded-full border-3 border-acc4 border-t-acc1 animate-spin"></div>
-        ) : (
-          "Back to Top"
-        )}
+        {t('footer.top')}
       </button>
     </footer>
   );

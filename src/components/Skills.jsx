@@ -1,9 +1,11 @@
 import { useEffect, useRef } from "react";
 import { useScroll } from "../context/ScrollContext";
 import SkillCard from "./SkillCard";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
   const { sectionRefs } = useScroll();
+  const { t } = useTranslation();
   const skillList = [
     {
       title: "HTML",
@@ -44,20 +46,20 @@ const Skills = () => {
     >
       <div className="flex flex-col gap-2 justify-around w-full lg:w-4/5 min-h-100 pb-8 p-4">
         <h3 className="text-center text-acc3 text-3xl md:text-4xl lg:text-6xl font-bold">
-          Skills
+          {t('skills.title')}
         </h3>
         <div className="flex flex-wrap md:flex-nowrap justify-evenly items-center gap-4">
           <div className="flex flex-col flex-wrap justify-around w-2/3 md:w-1/3 h-72 p-4 items-center bg-acc2 rounded-xl shadow-lg">
             <h3 className="text-center text-acc3 text-5xl lg:text-7xl">1</h3>
             <p className="text-center text-acc4 pb-1 text-xl lg:text-2xl">
-              year of experience
+              {t('skills.experience')}
             </p>
             <a
-              href="/Resume.pdf"
-              download="Resume.pdf"
+              href={t('skills.download.path')}
+              download={t('skills.download.file')}
               className="px-4 py-2 border-2 border-acc3 shadow-xl rounded-lg bg-acc3 font-bold text-acc4 text-center text-base lg:text-lg hover:bg-acc4 hover:text-acc3 active:shadow-md active:shadow-acc3 active:scale-102 transition-colors duration-300 ease-in-out"
             >
-              Download my CV
+              {t('skills.download.title')}
             </a>
           </div>
           <div className="flex flex-wrap gap-3 relative justify-evenly items-center w-full">

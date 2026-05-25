@@ -1,0 +1,131 @@
+{
+    "nav": {
+        "home": "Home",
+        "projects": "Proyectos",
+        "social": "Enlaces",
+        "dne": "No Existe"
+    },
+    "footer": {
+        "label": {
+            "title": "¡Hablemos!",
+            "message": "Envíame un mensaje y charlamos."
+        },
+        "form": {
+            "placeholders": {
+                "name": "Tu Nombre",
+                "email": "Tu Correo",
+                "title": "Título",
+                "message": "¿Qué estás pensando?"
+            },
+            "button": "Enviar Mensaje",
+            "messages": {
+                "success": "¡Mensaje enviado!",
+                "failed": "No se pudo enviar mensaje"
+            }
+        },
+        "top": "Volver arriba"
+    },
+    "hero": {
+        "title": "Desarrollador Front-end",
+        "button": "Ver Mis Proyectos",
+        "alt": "Foto de Anthony Black"
+    },
+    "about": {
+        "title": "¿Quién Soy?",
+        "description1": "Soy un desarrollador web en crecimiento, especializado en el desarrollo frontend. Soy un aprendiz ávido y siempre busco expandir mis conocimientos y habilidades.",
+        "description2": "Soy graduado de la Universidad Weber State, con un título técnico en ciencias generales. Recientemente descubrí una creciente pasión por el desarrollo web y he estado buscando mejorar mis habilidades.",
+        "description3": "También disfruto leer libros de desarrollo personal y ciencia ficción, disfrutar del aire libre y cocinar, especialmente dulces.",
+        "alt1": "Foto de Anthony Black 2",
+        "alt2": "Foto de Anthony Black 3"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "experience": "año de experiencia",
+        "download": {
+            "title": "Descargar mi Currículum",
+            "path": "/Curriculum.pdf",
+            "file": "AnthonyBlack_Curriculum.pdf"
+        }
+    },
+    "main_projects": {
+        "title": "Proyectos",
+        "button": "Mostrar mis Proyectos"
+    },
+    "side_bar": {
+        "home": "Inicio",
+        "about": "Sobre Mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contactar"
+    },
+    "project_page": {
+        "button": "Ver Más",
+        "projects": {
+            "espacio_paihuen": {
+                "title": "Espacio Paihuen",
+                "caption": "Esta página web es para un negocio de alquiler de cabañas en Chile. Creé la página desde cero usando React y una base de datos en Supabase. Está disponible tanto en inglés como en español utilizando React i18n. El propietario puede cambiar ciertos textos y añadir o eliminar fotos después de iniciar sesión, y cualquiera puede dejar comentarios o hacer una reservación. Este proyecto me enseñó muchas habilidades nuevas mientras trabajaba con React.",
+                "button": "Repositorio de GitHub"
+            },
+            "funval_service": {
+                "title": "Servicio de Funval",
+                "caption": "Fui el organizador del proyecto para esta aplicación web. Teníamos que crear una aplicación para que los estudiantes registraran sus horas de servicio con un comprobante en PDF, y para que los administradores revisaran esas horas y aprobaran o denegaran la solicitud. Organicé a un grupo de 5 personas para crear las diferentes vistas y funcionalidades, al mismo tiempo que contribuí directamente en el desarrollo del proyecto.",
+                "button": "Repositorio de GitHub"
+            },
+            "bookfinder": {
+                "title": "BookFinder App",
+                "caption": "Este fue un proyecto de React para una de mis clases con el fin de trabajar con estados globales y el consumo de APIs. Aprendí a crear hooks personalizados como useFetch y a crear contextos para usarlos en toda la aplicación. También añadí una función de inicio de sesión y conecté una base de datos en Supabase para guardar la información de los libros favoritos de cada usuario.",
+                "button": "Repositorio de GitHub"
+            },
+            "weather": {
+                "title": "App de Tiempo",
+                "caption": "Este proyecto se realizó con React y se enfocó específicamente en consumir APIs y mostrar la información. Aprendí a usar claves de API y a enviar peticiones a diferentes endpoints para obtener la información necesaria. Consumí dos APIs diferentes: una para la información de la IP y otra para los datos del clima.",
+                "button": "Repositorio de GitHub"
+            },
+            "fake_store": {
+                "title": "Catálogo de Tienda Virtual",
+                "caption": "Este fue un proyecto personal que quise hacer para practicar el trabajo con APIs y React, utilizando los datos para crear una página funcional. Usé la API de Fake Store para obtener los datos de los productos y mostrarlos en formato de catálogo. También añadí algunos estilos y funcionalidades para hacerla más fácil de usar.",
+                "button": "Repositorio de GitHub"
+            },
+            "comment": {
+                "title": "Sección de Commentarios",
+                "caption": "Este proyecto fue parte de un desafío de Frontend Mentor. Consistía en crear una sección de comentarios interactiva que permitiera a los usuarios añadir, editar y eliminar comentarios. Aprendí mucho sobre la manipulación del DOM y cómo crear una página dinámica e interactiva usando React JS.",
+                "button": "Repositorio de GitHub"
+            },
+            "todo_list": {
+                "title": "Lista de Tareas",
+                "caption": "Este fue un proyecto personal que quise completar como un desafío propio y como una aplicación útil. Me dio la oportunidad de trabajar con Local Storage y fue mi primer proyecto donde los cambios realizados en la página se mantienen después de recargarla.",
+                "button": "Repositorio de GitHub"
+            },
+            "gate": {
+                "title": "Portón para Cabañas",
+                "caption": "Este fue un proyecto que realicé para un complejo de cabañas de alquiler como el portón de entrada principal. Lo construí por mí mismo: diseñé, corté y soldé la estructura, instalé el riel y añadí los tablones de madera, creando un portón corredizo funcional y de movimiento suave, con la opción de añadir un motor para automatizarlo.",
+                "button": "Página de Facebook de las Cabañas"
+            },
+            "age_calculator": {
+                "title": "Calculador de Edad",
+                "caption": "Este proyecto fue de Frontend Mentor. Toma una fecha y la usa como fecha de nacimiento para calcular la edad de la persona. A medida que el usuario ingresa la fecha, verifica que sea válida y, al presionar el botón, valida la fecha completa antes de calcular. Aprendí más sobre JavaScript y cómo escribir código más lógico y limpio.",
+                "button": "Repositorio de GitHub"
+            },
+            "tip_calculator": {
+                "title": "Calculador de Propina",
+                "caption": "Este proyecto fue parte de un desafío de Frontend Mentor. Fue mi primer proyecto en JavaScript y aprendí mucho sobre la manipulación del DOM y cómo crear material interactivo, permitiendo al usuario ingresar información y cambiar la apariencia del sitio. Fue un primer proyecto emocionante que me enseñó muchas habilidades nuevas.",
+                "button": "Repositorio de GitHub"
+            },
+            "social_links": {
+                "title": "Perfíl Social Genérico",
+                "caption": "Este proyecto surgió de un desafío de la página Frontend Mentor. Consistía en recrear el perfil de enlaces sociales proporcionado para que fuera lo más parecido posible a la imagen original. Esto incluyó hacerlo adaptables para usuarios móviles e incluir estados de hover y focus para aumentar la accesibilidad.",
+                "button": "Repositorio de GitHub"
+            },
+            "blog": {
+                "title": "Previo de Blog Genérico",
+                "caption": "Este proyecto surgió de un desafío de la página Frontend Mentor. Consistía en recrear una tarjeta de vista previa de un blog e incluir algunas funciones interactivas de hover. Este fue uno de los primeros proyectos que hice y con el que comencé a practicar la creación de proyectos con HTML y funciones básicas de CSS.",
+                "button": "Repositorio de GitHub"
+            },
+            "recipe": {
+                "title": "Página de Receta Genérico",
+                "caption": "Este proyecto surgió de un desafío de la página Frontend Mentor. El desafío era crear una página de recetas responsiva basada en la imagen proporcionada, incluyendo estilos mediante el uso de etiquetas span y tablas. Esta fue la primera página real responsiva y con enfoque mobile-first que creé.",
+                "button": "Repositorio de GitHub"
+            }
+        }
+    }
+}
