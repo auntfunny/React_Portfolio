@@ -7,12 +7,12 @@ const Hero = () => {
       className="flex justify-center relative h-100 md:h-120 lg:h-160 bg-linear-to-t from-acc4 to-acc1"
     >
       <div className="text-center mt-18 md:mt-24 lg:mt-28">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl text-acc3">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl text-acc3">
           Anthony Black
-        </h1>
-        <h2 className="text-lg md:text-2xl lg:text-3xl text-acc3">
-          Front-end Developer
         </h2>
+        <h3 className="text-lg md:text-2xl lg:text-3xl text-acc3">
+          Front-end Developer
+        </h3>
       </div>
       <img
         src="https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778103000/Foto_zctgjh.png"

@@ -1,8 +1,45 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useScroll } from "../context/ScrollContext";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
   const { sectionRefs } = useScroll();
+  const [form, setForm] = useState({
+    message: "",
+    title: "",
+    name: "",
+    email: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  emailjs.init({ publicKey: "W02jWj1PPR-ybgsFu" });
+
+  function sendTheEmail(event) {
+    event.preventDefault();
+    setLoading(true);
+    setForm({...form, time: new Date().toString()})
+    try {
+      emailjs.send("service_my_page", "template_5q88fyt", form);
+      console.log("SUCCESS!");
+      setStatus("Message Sent!");
+      setForm({
+        message: "",
+        title: "",
+        name: "",
+        email: "",
+      });
+    } catch (error) {
+      console.log("FAILED...", error.text);
+      setStatus("Message failed to send");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const inputData = (event) => {
+    setForm({ ...form, [event.target.name]: event.target.value });
+  };
 
   return (
     <footer className="flex flex-col gap-4 justify-center items-center min-h-200 lg:min-h-160 bg-acc1">
@@ -20,33 +57,40 @@ const Footer = () => {
           </p>
         </div>
         <form
+          onSubmit={sendTheEmail}
           id="sendEmail"
           className="flex flex-col justify-evenly items-center w-3/4 lg:w-1/2 h-4/5"
         >
           <input
             required
             type="text"
-            name="nameOfSender"
-            id="nameOfSender"
+            name="name"
+            id="name"
             placeholder="Your name"
+            onChange={inputData}
+            value={form.name}
             className="bg-gray-300 p-3 w-7/8 rounded-lg border-2 border-gray-500 focus:bg-white focus:outline-none focus:border-2 focus:border-acc3 focus:shadow-md focus:shadow-acc3"
           />
           <br />
           <input
             required
             type="email"
-            name="emailOfSender"
-            id="emailOfSender"
+            name="email"
+            id="email"
             placeholder="Your email"
+            onChange={inputData}
+            value={form.email}
             className="bg-gray-300 p-3 w-7/8 rounded-lg border-2 border-gray-500 focus:bg-white focus:outline-none focus:border-2 focus:border-acc3 focus:shadow-md focus:shadow-acc3"
           />
           <br />
           <input
             required
             type="text"
-            name="subject"
-            id="subject"
+            name="title"
+            id="title"
             placeholder="Subject"
+            onChange={inputData}
+            value={form.title}
             className="bg-gray-300 p-3 w-7/8 rounded-lg border-2 border-gray-500 focus:bg-white focus:outline-none focus:border-2 focus:border-acc3 focus:shadow-md focus:shadow-acc3"
           />
           <br />
@@ -55,6 +99,8 @@ const Footer = () => {
             name="message"
             id="message"
             placeholder="What's on your mind?"
+            onChange={inputData}
+            value={form.message}
             className="bg-gray-300 p-3 w-7/8 h-3/5 rounded-lg border-2 border-gray-500 focus:bg-white focus:outline-none focus:border-2 focus:border-acc3 focus:shadow-md focus:shadow-acc3"
           ></textarea>
           <br />
@@ -66,16 +112,20 @@ const Footer = () => {
             >
               Send message
             </button>
-            <p id="statusMessage" className="text-acc3"></p>
+            <p className="text-acc3">{status}</p>
           </div>
         </form>
       </section>
       <button
         type="button"
         onClick={() => scrollTo(0, 0)}
-        className="w-3/4 py-3 bg-transparent border border-acc4 text-acc4 lg:border-acc2 lg:text-acc2 lg:hover:text-acc4 lg:hover:border-acc4 transition-colors duration-150 text-center rounded-xl cursor-pointer"
+        className={`w-3/4 py-3 bg-transparent border border-acc4 text-acc4 lg:border-acc2 lg:text-acc2 transition-colors duration-150 text-center rounded-xl ${loading ? "cursor-wait" : "lg:hover:text-acc4 lg:hover:border-acc4 cursor-pointer"}`}
       >
-        Back to Top
+        {loading ? (
+          <div class="w-6 h-6 rounded-full border-3 border-acc4 border-t-acc1 animate-spin"></div>
+        ) : (
+          "Back to Top"
+        )}
       </button>
     </footer>
   );
