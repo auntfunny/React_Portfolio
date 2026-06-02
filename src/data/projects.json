@@ -150,17 +150,17 @@
     },
     "articleTitle": {
       "id": "bookFinderArticleTitle",
-      "text": "project_page.projects.funval_service.title",
+      "text": "project_page.projects.bookfinder.title",
       "style": 2
     },
     "articlePara": {
       "id": "bookFinderArticleP",
-      "text": "project_page.projects.funval_service.caption"
+      "text": "project_page.projects.bookfinder.caption"
     },
     "sourceLink": {
       "id": "bookFinderSourceLink",
       "href": "https://github.com/auntfunny/BookFinder",
-      "text": "project_page.projects.funval_service.button"
+      "text": "project_page.projects.bookfinder.button"
     },
     "small_image": "https://res.cloudinary.com/dplnnusav/image/upload/q_auto/f_auto/v1778102999/bookFinder_small_ez33td.png"
   },
